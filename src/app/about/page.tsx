@@ -45,8 +45,9 @@ export default function AboutPage() {
             <div className="prose text-gray-700 space-y-4">
               <p>
                 Soy un desarrollador full stack apasionado por crear experiencias
-                web excepcionales. Con más de X años de experiencia, me especializo
-                en construir aplicaciones web modernas y escalables.
+                web excepcionales. Me especializo en construir aplicaciones web
+                modernas, rápidas y escalables con tecnologías JavaScript y
+                TypeScript.
               </p>
               <p>
                 Mi enfoque está en escribir código limpio, mantenible y eficiente,

@@ -1,7 +1,16 @@
 import ProjectCard from '@/components/ProjectCard';
 import { personalInfo, projects } from '@/lib/data';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: `${personalInfo.name} – Portafolio y Proyectos`,
+  description:
+    'Portafolio de ' +
+    personalInfo.name +
+    ', desarrollador full stack especializado en Next.js, React y TypeScript.',
+};
 
 export default function Home() {
   const featuredProjects = projects.filter((p) => p.featured);
@@ -10,6 +19,11 @@ export default function Home() {
     <div className="container mx-auto px-4 py-12">
       {/* Hero Section */}
       <section className="text-center mb-20">
+        <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-1 text-sm font-medium text-blue-700 mb-6">
+          <span className="h-2 w-2 rounded-full bg-blue-500" aria-hidden="true" />
+          <span>Disponible para nuevos proyectos y colaboraciones</span>
+        </div>
+
         <div className="relative w-32 h-32 mx-auto mb-6">
           <Image
             src={personalInfo.avatar}
